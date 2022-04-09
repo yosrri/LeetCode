@@ -39,12 +39,12 @@ class Solution {
             midNode = midNode.next;
         midNode = reverse(midNode);
 
-        ListNode temp = head;
+        slow = head;
 
         while (midNode!= null) {
-            if (temp.val != midNode.val)
+            if (slow.val != midNode.val)
                 return false;
-            temp = temp.next;
+            slow = slow.next;
             midNode = midNode.next;
         }
         return true;
