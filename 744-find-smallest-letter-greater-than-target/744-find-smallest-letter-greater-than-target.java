@@ -1,8 +1,8 @@
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
         int len = letters.length;
-        if(letters[0]>target || letters[len-1]<=target)
-            return letters[0];
+         if(letters[0]>target || letters[len-1]<=target)
+             return letters[0];
        
         int start = 0;
         int end = len;
