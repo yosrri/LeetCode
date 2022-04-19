@@ -5,8 +5,8 @@ class Solution {
         return s;
     }
     public boolean isPalindrome(String s) {
-        if(s.length()==0){
-            
+        if(s.isEmpty()){
+            return true;
         }
         s = sanitizedString(s);
         int i = 0;
