@@ -12,8 +12,8 @@ class Solution {
                 nums1[insertion--]=nums1[i--];  
             }
         }
-         while(i>=0)
-            nums1[insertion--]=nums1[i--];
+         // while(i>=0)
+         //    nums1[insertion--]=nums1[i--];
         while(j>=0)
             nums1[insertion--]=nums2[j--];
         
