@@ -1,5 +1,11 @@
 class Solution {
     public int lengthOfLongestSubstring(String s) {
+         if(s.length()==1)
+            return 1;
+        
+        if(s.length()==0)
+            return 0;
+        
         HashMap<Character,Integer> hm = new HashMap<>();
         int longestSub=0;
         int currSub = 0;        
