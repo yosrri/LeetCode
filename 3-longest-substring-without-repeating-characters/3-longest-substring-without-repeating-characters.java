@@ -7,12 +7,10 @@ class Solution {
             while(hm.containsKey(s.charAt(right) ) ){
                 hm.remove(s.charAt(left));
                 left++;
-                currSub--;
             }
             hm.put(s.charAt(right),0);
             right++;
-            currSub++;
-            longestSub = Math.max(longestSub, currSub);
+            longestSub = Math.max(longestSub, right-left);
             
         }
         return longestSub;
