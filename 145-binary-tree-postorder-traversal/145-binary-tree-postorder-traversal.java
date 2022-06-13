@@ -30,10 +30,8 @@ class Solution {
                 st.push(curr.left);
             if(curr.right!=null)
                 st.push(curr.right);
-    
-            }
-        return ls;
         }
-        
-    }         
+        return ls;
+    }  
+}         
         
