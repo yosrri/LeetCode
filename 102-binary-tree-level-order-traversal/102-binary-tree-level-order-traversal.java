@@ -21,7 +21,7 @@ class Solution {
             return ls;
         TreeNode curr = root;
         q.add(curr);
-        while(curr!=null && q.size()!=0){
+        while( q.size()!=0){
            int levelSize= q.size();
             List<Integer> level = new ArrayList<>();
             while(levelSize-->0){
