@@ -4,7 +4,7 @@ class Solution {
         int currMax=0;
         for(int i = 0 ; i<grid.length; i++){
             for(int j = 0 ; j<grid[0].length; j++){
-                currMax=+countMax(grid,i,j);
+                currMax=countMax(grid,i,j);
                 if(currMax>max)
                     max = currMax;
             }
